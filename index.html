@@ -8,9 +8,37 @@
     border-radius: 999px;
     text-decoration: none;
   }
-  </style>
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+  }
+  .card {
+    padding: 14px;
+    background: #f4f4f4;
+    border-radius: 8px;
+  }
+</style>
 </head>
 <body>
+  <h2 id="projects">Projects</h2>
+
+<details>
+  <summary>CS110 Bio Page</summary>
+  <p>Built with HTML and CSS. Hosted on GitHub Pages.</p>
+</details>
+
+<details>
+  <summary>Python Calculator</summary>
+  <p>A calculator app I built in CS120 for my final project.</p>
+</details>
+
+  <section class="grid">
+  <div class="card"><h3>Education</h3><p>AS CS — AVC, expected 2027</p></div>
+  <div class="card"><h3>Skills</h3><p>HTML, Python, C++</p></div>
+  <div class="card"><h3>Interests</h3><p>Web development, gaming</p></div>
+</section>
+
   <nav>
   <a class="pill" href="#about">About</a>
   <a class="pill" href="#links">Links</a>
